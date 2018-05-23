@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript</title>
+</head>
+<body>
+	<h2 id="msg"></h2>
+	<script>
+	
+	var name = prompt('Укажите ваше имя', '');
+	var years = prompt('Сколько вам лет?', '');
+	var age = document.getElementById("msg");		
+	
+	switch(true){
+		
+		case years >= 1 && years <= 23:
+		age.innerText = name + " вам еще работать и работать";
+		break;
+		case years >= 24 && years <= 65: 
+		age.innerText = name + " вам еще работать";
+		break;
+		case years > 65:
+		age.innerText = name + " вам еще работать";
+		break;
+	
+	}
+
+	</script>
+</body>
+</html>
